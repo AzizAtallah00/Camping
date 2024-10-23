@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.dto.DestinationDTO;
 import com.example.demo.enums.DestinationType;
 import com.example.demo.models.Destination;
 import com.example.demo.service.DestinationService;
@@ -34,8 +35,8 @@ public class DestinationController {
     }
 
     @PostMapping()
-    public Destination addDestination(@RequestBody Destination customer){
-        return destinationService.addDestination(customer);
+    public Destination addDestination(@RequestBody DestinationDTO destinationDto){
+        return destinationService.addDestination(destinationDto);
     }
 
     @DeleteMapping("/{id}")
