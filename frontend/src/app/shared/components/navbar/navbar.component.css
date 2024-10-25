@@ -1,0 +1,41 @@
+* {
+    font-family: Montserrat;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #01170D;
+}
+
+.navbar,
+.contact-info {
+    display: flex;
+    gap: 70px;
+    color: white;
+    align-items: center;
+}
+
+.navbar li a {
+    color: #fff;
+}
+
+.socials {
+    width: 30px;
+
+}
+
+.social-media {
+    display: flex;
+    gap: 30px;
+}
+
+.sign button {
+    color: white;
+    background-color: #01170D;
+    border: none;
+    cursor: pointer;
+
+
+}

@@ -1,0 +1,96 @@
+/* .container {
+  border-radius: 49px;
+} */
+
+.box {
+  width: 100%;
+  height: 100%;
+  background-color: #f6fbf9;
+  border-radius: 49px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .title {
+    font-size: 40px;
+    font-family: "Karla";
+    font-weight: normal;
+    text-align: center;
+  }
+
+  .subtitle {
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Karla";
+    font-weight: lighter;
+    line-height: 1.1;
+  }
+
+  .form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .form #mail {
+    width: 100%;
+    padding: 20px 30px;
+    font-family: "Karla";
+    font-size: 18px;
+    border-radius: 15px;
+    /* border: darkgray; */
+    /* border-width: 2px; */
+    border: 1px solid grey;
+  }
+
+  .password {
+    border-radius: 15px;
+  }
+
+  .signup-btn {
+    background-color: #84c7ae;
+    border-radius: 23px;
+    padding: 20px 30px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .signup-btn-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .comment {
+    display: flex;
+    justify-content: center;
+    font-family: "Karla";
+    font-size: 18px;
+    font-weight: lighter;
+    gap: 7px;
+  }
+
+  .p2 {
+    text-decoration: underline;
+  }
+
+  /* .form #password {
+    height: 85px;
+    width: 80%;
+  } */
+}
+
+/* margin : distance binet div ou div */
+
+/* .mdc-dialog__surface::before {
+  border-radius: 20px;
+} */
+/* :host {
+  border-radius: 100px;
+} */

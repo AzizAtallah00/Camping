@@ -3,32 +3,35 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './shared/navbar/navbar.component';
-import { ExploreComponent } from './explore/explore.component';
-import { CartComponent } from './explore/cart/cart.component';
-import { AboutUsComponent } from './about-us/about-us.component';
-import { SigninComponent } from './signin/signin.component';
-import { SingupComponent } from './singup/singup.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavbarComponent } from './shared/components/navbar/navbar.component';
+import { HomeComponent } from './home/components/home/home.component';
+import { CarouselModule } from 'primeng/carousel';
+import { ExploreComponent } from './explore/components/explore/explore.component';
+import { CartComponent } from './explore/components/cart/cart.component';
+import { SingupComponent } from './signup/singup.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatDialogModule } from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
+    HomeComponent,
     ExploreComponent,
     CartComponent,
-    AboutUsComponent,
-    SigninComponent,
-    SingupComponent,
+    SingupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    MatDialogModule,
+    CarouselModule,
+    MatDialogModule
+
   ],
-  providers: [],
-  bootstrap: [AppComponent],
+  providers: [
+    provideAnimationsAsync()
+  ],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

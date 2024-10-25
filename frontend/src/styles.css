@@ -1,21 +1,77 @@
-body {
-  background-color: #f5f5f5;
-  margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+* {
+    list-style-type: none;
+    font-family: Montserrat;
+
+}
+
+a {
+    text-decoration: none;
 }
 
 html,
 body {
-  height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    /* Ensures padding and border are included in element width and height */
 }
+
+
+.p-carousel {
+    .p-carousel-container {
+        position: relative;
+    }
+
+    .p-carousel-items-content {
+        z-index: 10;
+    }
+
+    img {
+        width: 100%;
+        height: calc(100vh - 90px);
+        object-fit: cover;
+    }
+
+    .p-carousel-prev,
+    .p-carousel-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 100;
+        background-color: #FFDA16;
+        width: 50px;
+        height: 50px;
+    }
+
+    .p-carousel-prev {
+        left: 10%;
+    }
+
+    .p-carousel-next {
+        right: 10%;
+    }
+
+    .p-carousel-indicator,
+    .p-reset {
+        display: none;
+    }
+
+    .p-carousel-content {
+        padding: 0;
+    }
+}
+
+html,
 body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+    height: 100%;
 }
 
-.mdc-dialog-surface {
-  border-radius: 49px;
-}
-
-.custom-dialog-container {
-  border-radius: 49px;
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
 }
