@@ -1,0 +1,20 @@
+.type button {
+  font-size: 48px;
+  font-family: "Montserrat";
+  font-weight: 900;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.type button:hover {
+  background-color: #ffda16;
+  border-radius: 21px;
+  width: 258px;
+}
+.type {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}

@@ -1,0 +1,45 @@
+.navbar {
+  margin: 0;
+  width: 100%;
+  height: 115px;
+  background-color: #01170d;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Montserrat";
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  /* gap: 300px; */
+  align-items: center;
+  justify-content: center;
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 50px;
+    /* position: absolute;
+    top: 40px; */
+  }
+
+  .logo {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+
+  .but {
+    margin-left: 10px;
+  }
+  .but button {
+    background-color: #01170d;
+    border-color: #01170d;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 50px;
+    /* position: absolute; */
+    /* top: 40px; */
+  }
+}

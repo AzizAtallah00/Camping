@@ -1,0 +1,21 @@
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mdc-dialog-surface {
+  border-radius: 49px;
+}
+
+.custom-dialog-container {
+  border-radius: 49px;
+}
