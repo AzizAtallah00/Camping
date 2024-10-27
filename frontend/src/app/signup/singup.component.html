@@ -1,23 +1,48 @@
 <div class="box">
   <div class="title">Create An Account</div>
   <div class="subtitle">
-    Create an account to enjoy all the services<br />
+    Create an account to enjoy all the services
     without any ads for free!
   </div>
 
   <div class="form">
+
     <div class="mail">
-      <input id="mail" type="text" placeholder="Email Address" />
+      <input id="mail" type="text" placeholder="FullName" required name="fullName" [(ngModel)]="user.fullName"
+        #fullName="ngModel" />
+      <div class="alert-danger" *ngIf="fullName.touched && !fullName.valid">
+        <div *ngIf="fullName.errors && fullName.errors['required']">FullName is required</div>
+      </div>
     </div>
+
+    <div class="mail">
+      <input id="mail" type="email" placeholder="Email Address" required name="email" [(ngModel)]="user.email"
+        #email="ngModel" pattern=".*@.*" />
+      <div class="alert-danger" *ngIf="email.touched && !email.valid">
+        <div *ngIf="email.errors && email.errors['required']">Email is required</div>
+        <div *ngIf="email.errors?.['pattern']">Email should contain ' &#64; '</div>
+      </div>
+    </div>
+
     <div class="password">
-      <input id="mail" type="password" placeholder="Password" />
+      <input id="mail" type="password" placeholder="Password" required name="password" [(ngModel)]="user.password"
+        #password="ngModel" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" />
+      <div class="alert-danger" *ngIf="password.touched && !password.valid">
+        <div *ngIf="password.errors && password.errors['required']">Password is required</div>
+        <div *ngIf="password.errors?.['pattern']">A valid password must:<br>
+          1) Have more than 8 characters.<br>
+          2) Contain a capital letter.<br>
+          3) Contain a lowercase.<br>
+          4) Contain a number.</div>
+      </div>
     </div>
+
   </div>
   <div class="signup-btn-container">
     <button class="signup-btn">Create Account</button>
   </div>
   <div class="comment">
     <div class="p1">Already Have An Account?</div>
-    <div class="p2">Sign In</div>
+    <div class="p2" (click)="openDialogSignIn()">Sign In</div>
   </div>
 </div>

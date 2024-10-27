@@ -11,6 +11,8 @@ import { CartComponent } from './explore/components/cart/cart.component';
 import { SingupComponent } from './signup/singup.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatDialogModule } from '@angular/material/dialog';
+import { FormsModule } from '@angular/forms';
+import { SigninComponent } from './signin/signin.component';
 
 
 @NgModule({
@@ -20,13 +22,15 @@ import { MatDialogModule } from '@angular/material/dialog';
     HomeComponent,
     ExploreComponent,
     CartComponent,
-    SingupComponent
+    SingupComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
-    MatDialogModule
+    MatDialogModule,
+    FormsModule
 
   ],
   providers: [

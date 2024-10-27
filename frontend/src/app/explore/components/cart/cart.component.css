@@ -15,34 +15,104 @@
 
     }
 
-    h2 {
-        margin-left: 22px;
-        color: #18472A;
 
+
+    h2 {
+        margin-left: 8px;
+        font-size: 24px;
+        color: #18472A;
+        font-weight: bold;
     }
 
     .infos {
         margin-left: 14px;
         display: flex;
-        gap: 80px;
-    }
+        gap: 20px;
 
-    .star {
-        padding-top: 5px;
-        display: flex;
-        height: 25px;
-        width: 25px;
-    }
 
-    h3 {
-        color: chocolate;
-    }
 
-    .season {
-        img {
-            width: 36px;
-            height: 34px;
-        }
     }
+}
 
+.star {
+    padding-top: 5px;
+    display: flex;
+
+}
+
+.star img {
+    height: 25px;
+    width: 25px;
+}
+
+h3 {
+    color: chocolate;
+    margin-bottom: 0px;
+    font-size: 27px;
+    font-family: "Montserrat";
+}
+
+.season {
+    img {
+        width: 36px;
+        height: 34px;
+    }
+}
+
+.details-level {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-size: 0.9em;
+    width: 500px;
+}
+
+.cart:hover .details-level {
+    display: block;
+}
+
+.details-season {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-size: 0.9em;
+    width: 500px;
+    position: absolute;
+    display: none;
+
+}
+
+.wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+
+}
+
+.wrapper p {
+    margin: 0;
+}
+
+.cart:hover .details-season {
+    display: block;
+}
+
+
+
+.easy {
+    color: #28a745;
+}
+
+.medium {
+    color: chocolate;
+}
+
+.hard {
+    color: #dc3545;
 }

@@ -13,10 +13,25 @@
             <img src="assets/cart/emptystar.svg">
             <img src="assets/cart/emptystar.svg">
         </div>
-        <div class="difficulty">
-            <h3>Medium</h3>
+
+        <div class="season" (mouseenter)="showInfoSeason = true" (mouseleave)="showInfoSeason = false">
+            <img src="assets/cart/summer.png" alt="Summer">
+            <div *ngIf="showInfoSeason" class="details-season">
+                <div class="wrapper">
+                    <img src="assets/cart/summer.png" />
+                    <p>Best time to visit: June to August</p>
+                </div>
+            </div>
         </div>
-        <div class="season">
-            <img src="assets/cart/summer.png">
+
+        <div class="difficulty" (mouseenter)="showInfo = true" (mouseleave)="showInfo = false">
+            <h3>Medium</h3>
+            <div *ngIf="showInfo" class="details-level">
+                <span class="easy">Easy</span>: Suitable for beginners, minimal
+                equipment
+                required.<br>
+                <span class="medium">Medium</span>: Moderate skill and preparation needed.<br>
+                <span class="hard">Hard</span>: Challenging; advanced skills and full equipment essential
+            </div>
         </div>
     </div>

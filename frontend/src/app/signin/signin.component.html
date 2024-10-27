@@ -1,0 +1,24 @@
+<div class="box">
+    <div class="title">Sign In</div>
+
+    <div class="form">
+
+        <div class="mail">
+            <input id="mail" type="email" placeholder="Email Address" required name="email" [(ngModel)]="user.email"
+                #email="ngModel" />
+        </div>
+
+        <div class="password">
+            <input id="mail" type="password" placeholder="Password" required name="password" [(ngModel)]="user.password"
+                #password="ngModel" />
+        </div>
+
+    </div>
+    <div class="signup-btn-container">
+        <button class="signup-btn">Sign in</button>
+    </div>
+    <div class="comment">
+        <div class="p1">You don't have an account?</div>
+        <div class="p2" (click)="openDialog()">Sign Up</div>
+    </div>
+</div>
